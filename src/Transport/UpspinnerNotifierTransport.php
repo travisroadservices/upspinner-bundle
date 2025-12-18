@@ -28,8 +28,8 @@ class UpspinnerNotifierTransport extends AbstractTransport
         string $key,
         string $from,
         string $environmentId = '',
-        HttpClientInterface $client = null,
-        EventDispatcherInterface $dispatcher = null
+        ?HttpClientInterface $client = null,
+        ?EventDispatcherInterface $dispatcher = null
     ) {
         $this->key = $key;
         $this->from = $from;
