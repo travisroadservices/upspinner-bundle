@@ -14,7 +14,7 @@ use Upspinner\ConnectBundle\Transport\UpspinnerNotifierTransport;
 class UpspinnerNotifierTransportTest extends TransportTestCase
 {
     public static function createTransport(
-        HttpClientInterface $client = null,
+        ?HttpClientInterface $client = null,
         string $from = 'from',
         string $environmentId = '721',
         string $host = 'host.test'
