@@ -2,6 +2,7 @@
 
 namespace Upspinner\ConnectBundle\Tests\Transport;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\Notifier\Message\ChatMessage;
 use Symfony\Component\Notifier\Message\SmsMessage;
@@ -38,9 +39,7 @@ class UpspinnerNotifierTransportTest extends TransportTestCase
         yield [new ChatMessage('Hello!')];
     }
 
-    /**
-     * @dataProvider validFromProvider
-     */
+    #[DataProvider('validFromProvider')]
     public function testNoInvalidArgumentExceptionIsThrownIfFromIsValid(string $from)
     {
         $message = new SmsMessage('+33612345678', 'Hello!');
