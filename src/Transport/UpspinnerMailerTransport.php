@@ -33,9 +33,9 @@ class UpspinnerMailerTransport extends AbstractApiTransport
     private string $environmentId = '';
 
     public function __construct(
-        HttpClientInterface $client = null,
-        EventDispatcherInterface $dispatcher = null,
-        LoggerInterface $logger = null,
+        ?HttpClientInterface $client = null,
+        ?EventDispatcherInterface $dispatcher = null,
+        ?LoggerInterface $logger = null,
         string $key = '',
         string $environmentId = ''
     ) {

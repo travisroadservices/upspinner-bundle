@@ -2,11 +2,11 @@
 
 namespace Upspinner\ConnectBundle\Tests\Transport;
 
-use Symfony\Component\Notifier\Test\TransportFactoryTestCase;
+use Symfony\Component\Notifier\Test\AbstractTransportFactoryTestCase;
 use Symfony\Component\Notifier\Transport\TransportFactoryInterface;
 use Upspinner\ConnectBundle\Transport\UpspinnerNotifierTransportFactory;
 
-class UpspinnerNotifierTransportFactoryTest extends TransportFactoryTestCase
+class UpspinnerNotifierTransportFactoryTest extends AbstractTransportFactoryTestCase
 {
     public function createFactory(): TransportFactoryInterface
     {

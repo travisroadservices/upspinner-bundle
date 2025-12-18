@@ -4,13 +4,13 @@ namespace Upspinner\ConnectBundle\Tests\Transport;
 
 use Psr\Log\NullLogger;
 use Symfony\Component\HttpClient\MockHttpClient;
-use Symfony\Component\Mailer\Test\TransportFactoryTestCase;
+use Symfony\Component\Mailer\Test\AbstractTransportFactoryTestCase;
 use Symfony\Component\Mailer\Transport\Dsn;
 use Symfony\Component\Mailer\Transport\TransportFactoryInterface;
 use Upspinner\ConnectBundle\Transport\UpspinnerMailerTransport;
 use Upspinner\ConnectBundle\Transport\UpspinnerMailerTransportFactory;
 
-class UpspinnerMailerTransportFactoryTest extends TransportFactoryTestCase
+class UpspinnerMailerTransportFactoryTest extends AbstractTransportFactoryTestCase
 {
     public function getFactory(): TransportFactoryInterface
     {
