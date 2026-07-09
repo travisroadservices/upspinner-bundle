@@ -29,20 +29,14 @@ class UpspinnerMailerTransport extends AbstractApiTransport
     private const HOST = '';
     private const PATH = '/api/incoming/emails';
 
-    private string $key = '';
-    private string $environmentId = '';
-
     public function __construct(
-        HttpClientInterface $client = null,
-        EventDispatcherInterface $dispatcher = null,
-        LoggerInterface $logger = null,
-        string $key = '',
-        string $environmentId = ''
+        ?HttpClientInterface $client = null,
+        ?EventDispatcherInterface $dispatcher = null,
+        ?LoggerInterface $logger = null,
+        private readonly string $key = '',
+        private readonly string $environmentId = ''
     ) {
         parent::__construct($client, $dispatcher, $logger);
-
-        $this->key = $key;
-        $this->environmentId = $environmentId;
     }
 
     /**

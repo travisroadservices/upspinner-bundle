@@ -9,10 +9,10 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 class UpspinnerConnectExtension extends Extension
 {
-    public function load(array $configs, ContainerBuilder $containerBuilder): void
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $loader = new YamlFileLoader(
-            $containerBuilder,
+            $container,
             new FileLocator(__DIR__ . '/../../config')
         );
         $loader->load('services.yaml');
