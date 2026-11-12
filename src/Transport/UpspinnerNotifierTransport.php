@@ -2,7 +2,7 @@
 
 namespace Upspinner\ConnectBundle\Transport;
 
-use http\Exception\RuntimeException;
+use RuntimeException;
 use Symfony\Component\Notifier\Exception\InvalidArgumentException;
 use Symfony\Component\Notifier\Exception\TransportException;
 use Symfony\Component\Notifier\Exception\UnsupportedMessageTypeException;

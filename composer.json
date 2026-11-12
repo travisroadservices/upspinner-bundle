@@ -12,7 +12,8 @@
     "symfony/http-kernel": "^7.4|^8.0",
     "symfony/uid": "^7.4|^8.0",
     "symfony/http-client": "^7.4|^8.0",
-    "symfony/notifier": "^7.4|^8.0"
+    "symfony/notifier": "^7.4|^8.0",
+    "symfony/yaml": "^7.4|^8.0"
   },
   "require-dev": {
     "phpstan/phpstan-symfony": "^2.1",
